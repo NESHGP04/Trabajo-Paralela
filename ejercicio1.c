@@ -10,8 +10,8 @@ int main() {
     // PRUEBA 1: Coloquen private(v0) en la línea de abajo y vean el error en la impresión.
 
     // PRUEBA 2: Cambien a firstprivate(v0) y vean cómo se corrige.
-    
-    #pragma omp parallel for ___________(v0)
+
+    #pragma omp parallel for firstprivate(v0)
     for(int i = 0; i < num_planetas; i++) {
         // v0 se usa y se modifica localmente
         v0 = v0 + (gravedades[i] * tiempo); 

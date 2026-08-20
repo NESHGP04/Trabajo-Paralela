@@ -13,10 +13,10 @@ int main() {
 
     // Iniciar la regin de secciones
 
-    #pragma omp parallel ___________
+
     {
         // Seccion 1: Suma (Media)
-        #pragma omp ___________
+
         {
             double suma_local = 0;
             for(int i = 0; i < N; i++) suma_local += arreglo[i];
@@ -24,7 +24,7 @@ int main() {
         }
 
         // Seccion 2: Máximo
-        #pragma omp ___________
+
         {
             double max_local = -1.0;
             for(int i = 0; i < N; i++) {
@@ -34,7 +34,7 @@ int main() {
         }
 
         // Seccion 3: Mínimo
-        #pragma omp ___________
+
         {
             double min_local = 10000.0;
             for(int i = 0; i < N; i++) {

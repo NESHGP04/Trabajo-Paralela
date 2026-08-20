@@ -10,7 +10,7 @@ int main() {
     inicio = omp_get_wtime();
     
     // Completen con parallel for y la cláusula de reducción para 'puntos_dentro'
-    #pragma omp ______________ ___________(+:puntos_dentro)
+    #pragma omp parallel for reduction(+:puntos_dentro)
     for (long i = 0; i < num_lanzamientos; i++) {
 
 

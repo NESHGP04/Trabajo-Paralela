@@ -20,7 +20,7 @@ int main() {
 
     // PRUEBA 2: Completen con schedule(dynamic, 100)
     
-    #pragma omp parallel for reduction(+:primos) schedule(___________)
+    #pragma omp parallel for reduction(+:primos) schedule(dynamic, 100)
     for (int i = 2; i <= max; i++) {
         if (es_primo(i)) {
             primos++;

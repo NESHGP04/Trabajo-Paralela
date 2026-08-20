@@ -1,0 +1,11 @@
+# Binarios compilados: cualquier "ejercicioN" sin extensión,
+# pero sin ignorar el código fuente "ejercicioN.c"
+ejercicio*
+!ejercicio*.c
+
+# Objetos y símbolos de debug
+*.o
+*.dSYM
+
+# Basura de macOS
+.DS_Store
